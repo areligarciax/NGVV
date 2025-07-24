@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen VogueVault | Fashion E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#">NexGen VogueVault</a> </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mujer.html">Mujer</a></li>
+            <li><a href="hombre.html">Hombre</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="cart.html"></a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a> 
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="hero" style="background-image: url('images/banner-fashion.jpeg');">
+    
+    </section>
+
+    <section id="featured-products">
+        <h2>Productos Destacados</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/featured.jpeg" alt="Producto 1">
+                <h3>Elegant Blazer Set</h3>
+                <p class="price">$769.00</p>
+                <button onclick="printALog()" class="btn-add-to-cart">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-preview">
+        <h2>Nuestro Blog</h2>
+        <div class="blog-posts">
+            <article class="blog-post-card">
+                <img src="images/articulo1.jpeg" alt="Artículo de Blog 1">
+                <h3>Las Tendencias de Moda Imperdibles de 2025</h3>
+                <p>¡Prepárense para descubrir lo que el 2025 tiene reservado para nuestro estilo! 
+                    Este post los guiará a través de las tendencias más trendy del año, desde el regreso del lujo discreto y 
+                    sumamente cómodo con sus elegantes tonos neutros, hasta una vibrante explosión de colores atrevidos. 
+                    También exploraremos cómo las siluetas dramáticas y el juego con texturas novedosas están redefiniendo las pasarelas, 
+                    sin olvidar el nostálgico pero fresco regreso de los 90 y los 2000. Finalmente, verán cómo los accesorios 
+                    se convierten en protagonistas y por qué la moda sostenible es más importante que nunca...</p>
+                <a href="blog.html" class="read-more">Leer Más</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 - NexGen VogueVault. Todos los derechos reservados.</p>
+</footer>
+
+<div id="chatbot-container">
+    <button id="chatbot-toggle-button"><i class="fas fa-comment-dots"></i></button>
+    <div id="chatbot-window" class="hidden">
+        <div id="chatbot-header">
+            <h3>Asistente de Moda</h3>
+            <button id="chatbot-close-button">&times;</button>
+        </div>
+        <div id="chatbot-messages">
+        </div>
+        <div id="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta...">
+            <button id="chatbot-send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
