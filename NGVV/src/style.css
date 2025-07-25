@@ -1,7 +1,7 @@
 :root {
     --primary-color: #333; /* Un gris oscuro para el texto principal */
     --secondary-color: #f5f5f5; /* Un gris claro para fondos */
-    --accent-color: #a0522d; /* Un color de acento, quizás un terracota o camel */
+    --accent-color: #B17F59; /* Un color de acento, quizás un terracota o camel */
     --text-light: #666;
     --text-dark: #222;
     --white: #fff;
@@ -276,7 +276,7 @@ footer {
 }
 
 #chatbot-toggle-button {
-    background-color: var(--accent-color);
+    background-color: #76b999;
     color: var(--white);
     border: none;
     border-radius: 100%;
@@ -292,7 +292,7 @@ footer {
 }
 
 #chatbot-toggle-button:hover {
-    background-color: #8c4625;
+    background-color: #76b999;
 }
 
 #chatbot-window {
